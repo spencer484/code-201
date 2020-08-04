@@ -1,0 +1,23 @@
+#singing{
+  color: orange;
+}
+
+ul {
+  background-color: purple;
+}
+
+.third{
+  font-size: 2em;
+}
+
+li:first-child{
+  font-family: fantasy;
+}
+
+
+/* 10:37
+Challenge 2: background color of all UL's purple
+10:37
+Challenge 3: All third li should be twice as big as all the others
+10:37
+Challenge 4: all first li's should be a different font */

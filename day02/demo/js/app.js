@@ -8,7 +8,7 @@ document.write('<h2>' + 'Hi ' + userName + '</h2>');
 document.write('Here are some fun facts about me!');
 var questionOne = prompt('Where am I originally from?');
 // console.log(questionOne, 'test');
-if (questionOne === 'Salt Lake City'){
+if (questionOne.toLowerCase() === 'Salt Lake City'){
   alert('CORRECT!');
   document.write('<li>For question one you answered ' + questionOne + '. CORRECT!</li>');
 } else {
@@ -51,4 +51,42 @@ if (questionFive.toLowerCase() === 'tacoma'){
   alert('Nope, that is incorrect');
   document.write('<li>For question one you answered ' + questionFive + '. that was incorrect</li>');
 }
+
+for (var i=0; i<4; i++){
+  var questionSix = prompt('Can you guess my favorite number between 1-10?');
+  questionSix = parseInt(questionSix);
+  console.log (questionSix);
+  if (questionSix === 8){
+    console.log ('correct');
+    alert ('You are Correct!');
+    break;
+
+  }else if (questionSix > 8){
+    console.log (questionSix);
+    alert ('You are too high');
+
+  }else if (questionSix < 8){
+    console.log (questionSix);
+    alert ('You are too low');
+  }
+  if (i===3){
+    alert ('You are out of guesses, the answer is 8!');
+  }
+
+}
+var favMovies = ['waiting for guffman', 'pale rider', 'death proof','the jerk','swingers','zelig','superbad','sean of the dead','rubin and ed','napoleon dynamite'];
+// console.log ('line 78',favMovies[4])
+var favorite = 'the jerk';
+console.log ('question seven', userResponse)
+for (var i=0; i<6; i++){
+  console.log ('i-', i)
+  console.log ('favMovies at i-', favMovies[i])
+  var userResponse = prompt('Can you guess my favorite movie?');
+  if (userResponse.toLowerCase() === favorite){
+    alert ('You are correct!');
+    break;    
+  }
+}
+    alert ('Sorry, You ran out of guesses.');
+
 document.write('Thanks ' + userName + '!' + ' for visiting and taking the quiz!');

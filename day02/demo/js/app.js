@@ -13,19 +13,19 @@
 // getUserName();
 
 
-function whereFrom() {
-  var questionOne = prompt('Where am I originally from?');
-  // console.log(questionOne, 'test');
-  if (questionOne.toLowerCase() === 'salt lake city') {
-    alert('CORRECT!');
-    document.write('<li>For question one you answered ' + questionOne + '. CORRECT!</li>');
-  } else {
-    alert('Nope, that is incorrect');
-    document.write('<li>For question one you answered ' + questionOne + '. that was incorrect</li>');
-  }
-}
+// function whereFrom() {
+//   var questionOne = prompt('Where am I originally from?');
+//   // console.log(questionOne, 'test');
+//   if (questionOne.toLowerCase() === 'salt lake city') {
+//     alert('CORRECT!');
+//     document.write('<li>For question one you answered ' + questionOne + '. CORRECT!</li>');
+//   } else {
+//     alert('Nope, that is incorrect');
+//     document.write('<li>For question one you answered ' + questionOne + '. that was incorrect</li>');
+//   }
+// }
 
-whereFrom();
+// whereFrom();
 
 function degree() {
   var questionTwo = prompt('What is my degree in?');
@@ -38,6 +38,7 @@ function degree() {
     document.write('<li>For question one you answered ' + questionTwo + '. that was incorrect</li>');
   }
 }
+
 degree();
 
 

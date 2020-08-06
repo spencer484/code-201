@@ -1,40 +1,46 @@
 'use strict';
 
 
-function getUserName() {
-  var userName = prompt('Hi, What is your name?');
-  // console.log('the user\'s name is' + userName);
-  alert('Hi ' + userName + '!' + ' Welcome to my site!');
-  alert('Please read my bio below and take a short quiz');
-  document.write('<h2>' + 'Hi ' + userName + '</h2>');
-  document.write('Here are some fun facts about me!');
+// function getUserName() {
+//   var userName = prompt('Hi, What is your name?');
+//   console.log('the user\'s name is' + userName);
+//   alert('Hi ' + userName + '!' + ' Welcome to my site!');
+//   alert('Please read my bio below and take a short quiz');
+//   document.write('<h2>' + 'Hi ' + userName + '</h2>');
+//   document.write('Here are some fun facts about me!');
+// }
+
+// getUserName();
+
+
+function whereFrom() {
+  var questionOne = prompt('Where am I originally from?');
+  // console.log(questionOne, 'test');
+  if (questionOne.toLowerCase() === 'salt lake city') {
+    alert('CORRECT!');
+    document.write('<li>For question one you answered ' + questionOne + '. CORRECT!</li>');
+  } else {
+    alert('Nope, that is incorrect');
+    document.write('<li>For question one you answered ' + questionOne + '. that was incorrect</li>');
+  }
 }
 
-getUserName();
+whereFrom();
+
+function degree() {
+  var questionTwo = prompt('What is my degree in?');
+  // console.log(questionOne, 'test');
+  if (questionTwo.toLowerCase() === 'illustration') {
+    alert('CORRECT!');
+    document.write('<li>For question one you answered ' + questionTwo + '. CORRECT!</li>');
+  } else {
+    alert('Nope, that is incorrect');
+    document.write('<li>For question one you answered ' + questionTwo + '. that was incorrect</li>');
+  }
+}
+degree();
 
 
-
-
-// var questionOne = prompt('Where am I originally from?');
-// // console.log(questionOne, 'test');
-// if (questionOne.toLowerCase() === 'Salt Lake City') {
-//   alert('CORRECT!');
-//   document.write('<li>For question one you answered ' + questionOne + '. CORRECT!</li>');
-// } else {
-//   alert('Nope, that is incorrect');
-//   document.write('<li>For question one you answered ' + questionOne + '. that was incorrect</li>');
-// }
-
-
-// var questionTwo = prompt('What is my degree in?');
-// // console.log(questionOne, 'test');
-// if (questionTwo.toLowerCase() === 'illustration'){
-//   alert('CORRECT!');
-//   document.write('<li>For question one you answered ' + questionTwo + '. CORRECT!</li>');
-// } else {
-//   alert('Nope, that is incorrect');
-//   document.write('<li>For question one you answered ' + questionTwo + '. that was incorrect</li>');
-// }
 // var questionThree = prompt('Who did I study guitar with?');
 // // console.log(questionOne, 'test');
 // if (questionThree.toLowerCase() === 'robert fripp'){

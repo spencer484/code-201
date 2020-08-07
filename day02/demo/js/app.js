@@ -1,6 +1,8 @@
 'use strict';
 
 
+// This is a test line 
+
 function getUserName() {
   var userName = prompt('Hi, What is your name?');
   console.log('the user\'s name is' + userName);
